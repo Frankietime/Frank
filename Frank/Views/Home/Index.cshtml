@@ -1,6 +1,8 @@
-﻿<div class="jumbotron">
+﻿
+<div class="navbar2 navbar-inverse">
     <h1 class="text-personal">[ Frank ]</h1>
 </div>
+<img src="\Content\imgs\bar3.jpg" class="img-responsive" />
 <div class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
@@ -11,16 +13,58 @@
             </button>
             @*@Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })*@
         </div>
-        <div class="navbar-collapse collapse">
+
+        <div class="navbar-collapse collapse" >
             <ul class="nav navbar-nav">
-                <li class="text-personal">@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("Music", "Contact", "Home")</li>
-                <li>@Html.ActionLink("Art", "Contact", "Home")</li>
-                <li>@Html.ActionLink("Technology", "Contact", "Home")</li>
-                <li>@Html.ActionLink("Bio", "About", "Home")</li>
+                <li>
+                    <ul id="my-menu" class="nav navbar-nav">
+                        <li><a href="#">Music</a>
+                            <ul class="nav" style="position: fixed">
+                                <li><a style="color: #D7B420" href="#">Solo</a></li>
+                                <li><a style="color: #D7B420" href="#">Bands</a></li>
+                                <li><a style="color: #D7B420" href="#">Film Scoring</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul id="my-menu" class="nav navbar-nav">
+                        <li>
+                            <a href="#">Visuals</a>
+                            <ul class="nav" style="position: fixed">
+                                <li><a style="color: #D7B420" href="#">Photo Gallery</a></li>
+                                <li><a style="color: #D7B420" href="#">Drawings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a style="color: #D7B420" href="#">Technology</a></li>
+                <li>
+                    <ul id="my-menu" class="nav navbar-nav">
+                        <li>
+                            <a href="#">Frank</a>
+                            <ul class="nav" style="position: fixed">
+                                <li><a style="color: #D7B420" href="#">About Me</a></li>
+                                <li><a style="color: #D7B420" href="#">Writings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+              
             </ul>
-            @Html.Partial("_LoginPartial")
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </div>
 </div>
@@ -36,7 +80,11 @@
 
 <div class="row">
     <div class="col-sm-4">RELEASES</div>
-    <div class="col-sm-4">DAYLY NEWS</div>
-    <div class="col-sm-4">DINAMIC CONTENT</div>
+    <div class="col-sm-4">DAILY NEWS</div>
+    <div class="col-sm-4">DYNAMIC CONTENT</div>
 </div>
 </div>
+<script>
+    $('#my-menu').tendina({
+    });
+</script>

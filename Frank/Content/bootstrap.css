@@ -59,7 +59,7 @@ html {
 
 body {
   margin: 0;
-}
+ }
 
 a:focus {
   outline: thin dotted;
@@ -443,6 +443,7 @@ cite {
 }
 
 .text-personal {
+    text-align: center;
     color: #D7B420;
 }
 
@@ -766,6 +767,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  color: #E7CB5A;
 }
 
 .container:before,
@@ -3824,6 +3826,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
   padding: 10px 15px;
+  margin: 0 0 0px 100px
 }
 
 .nav > li > a:hover,
@@ -4032,6 +4035,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
   z-index: 1000;
   min-height: 50px;
   margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.navbar2 {
+  position: relative;
+  z-index: 1000;
+  min-height: 50px;
+  margin-bottom: 0px;
   border: 1px solid transparent;
 }
 
